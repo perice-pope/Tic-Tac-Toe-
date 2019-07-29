@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+section.board {
+    display: grid;
+    grid-template-columns: repeat(3, 15vmin);
+    grid-template-rows: repeat(3, 15vmin);
+    grid-gap: 0vmin;
+    
+  }
+
+section.board div {
+    border: 1px solid black;
+    border-collapse: collapse; 
+  }
+ 
+/* more traditional board */
+
+/* div#r3c1 {
+border-top: 0;
+border-left: 0;  
+  }
+
+div#r1c3 {
+border-top: 0;
+border-left: 0;
+border-bottom: 0;     
+}
+   */
+
